@@ -2,6 +2,7 @@ from selenium import webdriver
 # from selenium.webdriver.common.keys import Keys
 import cv2
 import time
+import os
 
 
 if __name__ == "__main__":
@@ -18,3 +19,5 @@ if __name__ == "__main__":
     # hard crops for window frame
     crop_im = im[100:460,30:780]
     cv2.imwrite("j_cam_cropped.png",crop_im)
+
+    os.remove("j_cam.png")
