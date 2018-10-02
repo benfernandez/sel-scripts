@@ -23,6 +23,7 @@ if __name__ == "__main__":
                                                                     str(datetime.datetime.now().year)))
     driver.close()
 
+    # resize images in folder
     filelist = os.listdir(".")
     for file in filelist:
         if file.endswith(".png"):
